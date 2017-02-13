@@ -1,0 +1,83 @@
+Problem Statement
+    	If you look on a map of Foxland, you will notice that there is a sea to the north of Foxland. For the purpose of this problem, the coast is the straight line y = 0. The halfplane with y > 0 is the sea, and the opposite halfplane is Foxland. 
+
+
+
+Fox Ciel is the commander of the Foxland Coast Guard (FCG). One day, a fleet of n enemy warships approached Foxland. Luckily, the FCG has exactly n cannons placed along the coast, so Ciel can attack each warship using a different cannon. 
+
+
+
+You are given the coordinates of cannons and warships in the int[]s d, x, and y. Cannon i is located at the point (d[i], 0). Warship j is located at the point (x[j], y[j]). 
+
+
+
+There are n! possible ways how to assign the cannons to the warships. A cannon trajectory is the line segment that connects the cannon and the warship. An assignment of cannons to warships is good if all cannon trajectories are disjoint - in other words, if no two trajectories intersect each other. 
+
+
+
+Count all good assignments of cannons to warships, and return that count modulo 10^9 + 7.
+ 
+Definition
+    	
+Class:	CoastGuard
+Method:	count
+Parameters:	int[], int[], int[]
+Returns:	int
+Method signature:	int count(int[] d, int[] x, int[] y)
+(be sure your method is public)
+    
+ 
+Constraints
+-	n will be between 1 and 50, inclusive.
+-	d, x and y will contain exactly n elements.
+-	Each element in d will be between -1,000 and 1,000, inclusive.
+-	Each element in x will be betwene -1,000 and 1,000, inclusive.
+-	Each element in y will be between 1 and 1,000, inclusive.
+-	Elements in d will be distinct.
+-	All points (x[i], y[i]) will be distinct.
+ 
+Examples
+0)	
+    	
+{-2, 2}
+{0, 1}
+{1, 2}
+Returns: 2
+There are two cannons and two warships. Both assignments of cannons to warships are good, so we should return 2.
+1)	
+    	
+{1,2}
+{1,2}
+{10,10}
+Returns: 1
+This time, the situation looks as follows:
+Cannon 0 is located at (1,0).
+Cannon 1 is located at (2,0).
+Warship 0 is located at (1,10).
+Warship 1 is located at (2,10).
+The only good assignment is (cannon 0 shoots warship 0, cannon 1 shoots warship 1). The other assignment is not good: the two cannon trajectories intersect.
+2)	
+    	
+{-2, 2, 98, 102}
+{0, 1, 100, 101}
+{1, 2, 1, 2}
+Returns: 4
+3)	
+    	
+{1,109,229,294,589,615,741,822,859,1000}
+{546,850,287,452,864,874,529,879,818,589}
+{414,176,191,15,764,825,204,477,34,460}
+Returns: 400
+4)	
+    	
+{-1,0,1}
+{0,0,0}
+{1,2,3}
+Returns: 2
+Note that two line segments do also intersect if the endpoint of one segment lies on another segment.
+5)	
+    	
+{0}
+{0}
+{1}
+Returns: 1
