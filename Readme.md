@@ -1,5 +1,4 @@
 # Upskill project
----
 
 The plan is to absorb two large bodies of knowledge by the end of the year, these can be broadly divided into:
 * Exploit Development
@@ -14,7 +13,8 @@ learning
 Improving exploit development skills using a combination of online courses and lots of practice
 
 ### Tutorials/Blogs
-* Network Based Exploits
+* Web Based Exploitation
+* Reverse Engineering
 * Classic Exploitation (Corelan Tutorial Series)
 	* [Exploit Writing 1 (Stack Based)](https://www.corelan.be/index.php/2009/07/19/exploit-writing-tutorial-part-1-stack-based-overflows/)
 	* [Exploit Writing 2](https://www.corelan.be/index.php/2009/07/23/writing-buffer-overflow-exploits-a-quick-and-basic-tutorial-part-2/)
@@ -25,6 +25,12 @@ Improving exploit development skills using a combination of online courses and l
 * Exploit to Metasploit
 	* [Metasploit module development basics](https://www.corelan.be/index.php/2009/08/12/exploit-writing-tutorials-part-4-from-exploit-to-metasploit-the-basics/)
 	* [Metasploit Unleashed](https://www.offensive-security.com/metasploit-unleashed/exploit-development-goals/)
+* Heap Exploitation
+
+### Courses
+* [MIT Computer Systems Security](https://www.youtube.com/playlist?list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh)
+* [Modern Binary Exploitation](http://security.cs.rpi.edu/courses/binexp-spring2015/)
+* [Modern Binary Exploitation (Github)](https://github.com/RPISEC/MBE)
 
 ---
 ## Data Science/Artificial Intelligence
